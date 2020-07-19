@@ -108,11 +108,11 @@ header {
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 .header-divider {
@@ -260,11 +260,11 @@ aside {
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0 0 0;
 }
 
 .faq h2 {
@@ -364,7 +364,8 @@ aside {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /* General styles */
+  /* Tablet General styles */
+
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -378,8 +379,8 @@ aside {
   }
 
   header .content-wrapper {
-    justify-content: space-between;
     width: 100%;
+    justify-content: space-between;
   }
 
   header nav {
@@ -400,10 +401,10 @@ aside {
 
   /* Aside */
   aside .content-wrapper {
+    margin: 50px 0;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    margin: 50px 0;
   }
 
   aside .content-wrapper .form-description,
@@ -423,7 +424,7 @@ aside {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews */
@@ -480,6 +481,10 @@ aside {
 
   /* -------------------- Tablet Styles - FAQ Page-------------------- */
 
+  header {
+    padding: 15px 0;
+  }
+
   .faq .content-wrapper {
     justify-content: space-between;
   }
@@ -491,11 +496,60 @@ aside {
   .faq h2 {
     width: 100%;
   }
-     
-@media only screen and (min-width: 1200px) {
-    /*Desktop styles here*/
-    }
+}
+
+@media only screen and (min-width: 1200px) {  
+  /*Desktop General styles */ 
+
+  .content-wrapper {
+    max-width: 960px;
+  }
   
+  /* -------------------- Desktop Styles - Homepage -------------------- */
+
+  /* Hero Area */
+  .hero-area h1 {
+    width: 60%
+  }
+       
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+       
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+       
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+       
+  .features article {
+    flex-basis: 33%;
+  }
+       
+  /* Reviews */ 
+  .reviews article div {
+    width: 42%;
+  }
+  
+  /* -------------------- Desktop Styles - About Page-------------------- */
+ 
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+  
+  /* -------------------- Desktop Styles - FAQ Page-------------------- */
+ 
+  .faq h2 {
+    width: 100%;
+  }
+       
+}
 
 /* ==========================================================================
    Print styles.
